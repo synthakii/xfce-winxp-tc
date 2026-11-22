@@ -200,6 +200,11 @@ static GtkWidget* wintc_notification_area_get_ext_widget(
             FALSE,
             0
         );
+
+        gtk_widget_set_margin_end(
+            notif_icon,
+            1
+		);
     }
     else
     {
@@ -210,6 +215,11 @@ static GtkWidget* wintc_notification_area_get_ext_widget(
             FALSE,
             0
         );
+
+        gtk_widget_set_margin_start(
+            notif_icon,
+            1
+		);
     }
 
     if (!g_slist_find(notif_area->list_uictl_behaviours, ctx))
