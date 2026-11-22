@@ -204,7 +204,7 @@ static void wintc_clock_runner_update_time(
     // Update target label with time
     //
     GDateTime* time    = g_date_time_new_now_local();
-    gchar*     timestr = g_date_time_format(time, "%H:%M");
+    gchar*     timestr = g_date_time_format(time, "%l:%M %p");
 
     gtk_label_set_text(
         GTK_LABEL(clock_runner->label_target),
